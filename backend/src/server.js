@@ -1,6 +1,11 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const routes = require("./routes");
 const server = express();
+
+mongoose.connect("mongodb+srv://omniramon:av2f8bv8@cluster0-ggdn4.mongodb.net/omnidatabase?retryWrites=true&w=majority", {
+    useNewUrlParser: true
+});
 
 server.use(express.json());
 server.use(routes);
