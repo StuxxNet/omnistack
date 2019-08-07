@@ -4,7 +4,7 @@ const mongoose = require("cors");
 const routes = require("./routes");
 const server = express();
 
-mongoose.connect("mongodb+srv://omniramon:av2f8bv8@cluster0-ggdn4.mongodb.net/omnidatabase?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://omniramon:<password>@cluster0-ggdn4.mongodb.net/omnidatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true
 });
 
